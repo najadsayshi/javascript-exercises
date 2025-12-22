@@ -1,4 +1,16 @@
-const palindromes = function () {
+const palindromes = function (string) {
+    string = string.toLowerCase  ();
+    string.replace(' ','')
+    let l = 0
+    let r = string.length-1;
+    while (l<r){
+        if (string[l]!=string[r]){
+            return false
+        }
+        l++;
+        r--;
+    }
+    return true;
 
 };
 
